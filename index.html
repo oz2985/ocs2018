@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="IE=edge">
-<title>6-02_box</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+<title>INDEX</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
 <style>
 #box {
 	display: none;
@@ -59,9 +59,13 @@
 </section>
 </div><!-- /.main-wrapper -->
 <footer>JavaScript Samples</footer>
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#box_btn').on('click', function(){
+		$('#box').slideToggle();
+	});
+});
+</script>
 </body>
 </html>
